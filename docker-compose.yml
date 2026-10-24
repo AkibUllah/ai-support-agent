@@ -1,0 +1,17 @@
+# Single service: API + chat UI on :8000, SQLite on a named volume (seeded on first start).
+services:
+  agent:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      AGENT_LLM_PROVIDER: ${AGENT_LLM_PROVIDER:-fake}
+      AGENT_LLM_MODEL: ${AGENT_LLM_MODEL:-}
+      AGENT_LLM_BASE_URL: ${AGENT_LLM_BASE_URL:-}
+      AGENT_LLM_API_KEY: ${AGENT_LLM_API_KEY:-}
+      AGENT_ADMIN_API_KEY: ${AGENT_ADMIN_API_KEY:-change-me-admin-key}
+    volumes:
+      - agent-data:/srv/agent/var
+
+volumes:
+  agent-data:
