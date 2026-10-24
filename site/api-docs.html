@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Support Agent - API reference</title>
+  <meta name="description" content="HTTP API of a tool-calling customer-support agent with guardrails, policy engine and per-turn traces.">
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css">
+  <style>
+    :root { --ink: #1f2933; --muted: #52606d; --line: #e4e7eb; --accent: #0e7490; --panel: #f5f7fa; }
+    body { margin: 0; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .hero { border-bottom: 1px solid var(--line); background: var(--panel); padding: 24px 16px 18px; }
+    .hero-inner { max-width: 1460px; margin: 0 auto; }
+    .hero h1 { margin: 0 0 6px; font-size: 1.5rem; }
+    .hero p { margin: 0 0 12px; color: var(--muted); max-width: 75ch; line-height: 1.45; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .links a { padding: 7px 12px; border-radius: 6px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-size: .92rem; font-weight: 600; }
+    .links a.primary { background: var(--accent); color: #fff; }
+    #swagger-ui { max-width: 1460px; margin: 0 auto; }
+    .swagger-ui .topbar { display: none; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>AI Support Agent: API reference</h1>
+      <p>Static reference built from the exported OpenAPI document; no backend runs on this page. The <a href="../">replay demo</a> shows recorded eval conversations with their traces, and the Codespace runs the real service.</p>
+      <nav class="links">
+        <a class="primary" href="https://github.com/AkibUllah/ai-support-agent">Source on GitHub</a>
+        <a href="../">Replay demo</a>
+        <a href="https://codespaces.new/AkibUllah/ai-support-agent?quickstart=1">Open in Codespaces</a>
+        <a href="https://render.com/deploy?repo=https://github.com/AkibUllah/ai-support-agent">Deploy to Render</a>
+      </nav>
+    </div>
+  </header>
+  <div id="swagger-ui"></div>
+  <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js" crossorigin></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.ui = SwaggerUIBundle({ url: "./openapi.json", dom_id: "#swagger-ui", deepLinking: true,
+        docExpansion: "list", defaultModelsExpandDepth: 0, supportedSubmitMethods: [],
+        presets: [SwaggerUIBundle.presets.apis] });
+    });
+  </script>
+</body>
+</html>

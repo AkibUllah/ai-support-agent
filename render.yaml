@@ -1,0 +1,23 @@
+# Render blueprint: one-click deploy of the API + chat UI with the offline model.
+# The free plan has no persistent disk, so the SQLite demo database is re-seeded on each
+# start. Set AGENT_LLM_* to use a real model. https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: ai-support-agent
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: AGENT_APP_ENV
+        value: production
+      - key: AGENT_LOG_LEVEL
+        value: INFO
+      - key: AGENT_LLM_PROVIDER
+        value: fake
+      - key: AGENT_ADMIN_API_KEY
+        generateValue: true
