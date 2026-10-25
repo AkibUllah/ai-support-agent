@@ -164,7 +164,7 @@ SHIPMENTS = {
         "PC-771188",
         [(110, "Picked up from Haat Online warehouse, Tejgaon"), (72, "Delivered")],
     ),
-    "HO-10023": ("Meghna Express", "ME-55102", [(340, "Picked up"), (288, "Delivered")]),
+    "HO-10023": ("Swift Courier", "SC-55102", [(340, "Picked up"), (288, "Delivered")]),
     "HO-10024": (
         "Padma Courier",
         "PC-882310",
@@ -176,22 +176,22 @@ SHIPMENTS = {
     ),
     "HO-10031": ("Padma Courier", "PC-771401", [(40, "Picked up"), (24, "Delivered")]),
     "HO-10032": ("Padma Courier", "PC-770950", [(190, "Picked up"), (167, "Delivered")]),
-    "HO-10033": ("Meghna Express", "ME-54988", [(200, "Picked up"), (169, "Delivered")]),
+    "HO-10033": ("Swift Courier", "SC-54988", [(200, "Picked up"), (169, "Delivered")]),
     "HO-10035": ("Padma Courier", "PC-771322", [(70, "Picked up"), (48, "Delivered")]),
     "HO-10036": ("Padma Courier", "PC-771200", [(120, "Picked up"), (96, "Delivered")]),
     "HO-10041": (
-        "Meghna Express",
-        "ME-55410",
+        "Swift Courier",
+        "SC-55410",
         [
             (50, "Picked up from Haat Online warehouse, Tejgaon"),
             (30, "At Chattogram hub"),
             (24, "Delivered"),
         ],
     ),
-    "HO-10051": ("Meghna Express", "ME-55001", [(140, "Picked up"), (120, "Delivered")]),
+    "HO-10051": ("Swift Courier", "SC-55001", [(140, "Picked up"), (120, "Delivered")]),
     "HO-10052": (
-        "Meghna Express",
-        "ME-55620",
+        "Swift Courier",
+        "SC-55620",
         [(8, "Picked up from Haat Online warehouse, Tejgaon"), (2, "In transit to Sylhet hub")],
     ),
 }
