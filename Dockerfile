@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.6
 # Stage 1: build the React chat UI
-FROM node:18-alpine AS ui
+FROM node:26-alpine AS ui
 WORKDIR /ui
 COPY ui/package.json ui/package-lock.json ./
 RUN npm ci --no-audit --no-fund
