@@ -4,6 +4,8 @@
 A customer-support agent for an online shop that takes real actions through tools (order lookup, tracking, refunds, address changes, tickets), with authorisation, a policy engine and prompt-injection guardrails enforced in code, and a 53-scenario eval suite that proves it.
 
 [![CI](https://github.com/AkibUllah/ai-support-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/AkibUllah/ai-support-agent/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/AkibUllah/ai-support-agent/actions/workflows/codeql.yml/badge.svg)](https://github.com/AkibUllah/ai-support-agent/actions/workflows/codeql.yml)
+[![Release](https://img.shields.io/github/v/release/AkibUllah/ai-support-agent)](https://github.com/AkibUllah/ai-support-agent/releases)
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688)
 ![React](https://img.shields.io/badge/React-18.3-61dafb)
@@ -250,11 +252,11 @@ Covered: refund policy boundaries (inclusive ৳5,000 limit, exact 7-day window,
 
 ## Roadmap
 
-- Record pass rates for at least one hosted and one local model next to the scripted baseline
-- An LLM-judged check for reply faithfulness to tool results, alongside the substring checks
-- A small staff console for the handoff queue (take over, reply, release back to the agent)
-- Streaming replies (SSE) with tool steps pushed to the timeline as they happen
-- Replace the demo login with OTP or JWT from the shop's identity provider
+- [ ] Record pass rates for at least one hosted and one local model next to the scripted baseline (#2)
+- [ ] An LLM-judged check for reply faithfulness to tool results, alongside the substring checks (#3)
+- [ ] A small staff console for the handoff queue (take over, reply, release back to the agent) (#4)
+- [ ] Streaming replies (SSE) with tool steps pushed to the timeline as they happen (#5)
+- [ ] Replace the demo login with OTP or JWT from the shop's identity provider (#6)
 
 ## License
 
