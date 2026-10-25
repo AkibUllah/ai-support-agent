@@ -440,7 +440,7 @@
     - user: "Where is my order?"
       expect: {tools: [list_recent_orders]}
     - user: "HO-10052"
-      expect: {tools: [track_shipment], reply_contains: ["Meghna Express"]}
+      expect: {tools: [track_shipment], reply_contains: ["Swift Courier"]}
 
 - id: remembers-order-for-follow-up
   category: multi_turn
